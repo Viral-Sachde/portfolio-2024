@@ -17,10 +17,10 @@ const Hero = () => {
     ];
 
     return (
-        <main className="px-4 sm:px-8 lg:px-16 py-12 space-y-10 min-h-screen ">
+        <main className="px-4 sm:px-8 lg:px-16 py-12 space-y-10 min-h-screen mb-0">
             {/* Hero Section */}
             <div className="space-y-4 text-center sm:text-left">
-               
+
                 <h1 className="text-3xl sm:text-4xl font-bold dark:text-white">
                     Hola! I&apos;m Viral Sachde
                 </h1>
@@ -38,16 +38,21 @@ const Hero = () => {
                 </p>
             </div>
 
-            {/* Tech Stack */}
             <div className="space-y-4">
                 <h2 className="text-2xl font-bold dark:text-[#F5F5DC]">Tech Stack</h2>
-                <div className="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                     {techStack.map((tech) => (
                         <div
                             key={tech.name}
-                            className="flex flex-col items-center justify-center rounded-lg bg-white/10 backdrop-blur-lg p-2 shadow-md"
+                            className="flex flex-col items-center justify-center rounded-lg bg-white/10 backdrop-blur-lg p-6 shadow-md"
                         >
-                            <Image src={tech.icon} alt={tech.name} width={40} height={40} />
+                            <Image
+                                src={tech.icon}
+                                alt={tech.name}
+                                width={40}
+                                height={40}
+                                className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14" // Adjusted responsive icon sizes
+                            />
                         </div>
                     ))}
                 </div>

@@ -14,7 +14,7 @@ import Link from "next/link"
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
+  { href: "/project", label: "Projects" },
   { href: "/articles", label: "Articles" },
   { href: "/contact", label: "Contact" },
 ]
@@ -37,7 +37,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[400px]">
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
+          <SheetTitle>Menu</SheetTitle> 
         </SheetHeader>
         <div className="grid gap-4 py-4">
           <nav className="grid gap-2">

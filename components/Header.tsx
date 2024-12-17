@@ -15,7 +15,7 @@ const Header = () => {
     ];
 
     return (
-        <div className='mt-[-20px] flex items-center justify-center'>
+        <div className='mt-[-20px] flex items-center justify-center  noise dark:noise  '>
             <HoverBorderGradient>
                 <header className="sticky  w-full max-w-7xl mx-auto rounded-3xl backdrop-filter backdrop-blur-3xl z-50 flex items-center justify-between p-4 sm:p-6 ">
                     <div className="flex items-center space-x-6">

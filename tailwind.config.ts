@@ -55,22 +55,17 @@ const config: Config = {
 				}
 			},
 			animation: {
-				aurora: "aurora 60s linear infinite",
+				rotateBlob: "rotate 20s infinite",
 			},
 			keyframes: {
-				aurora: {
-					from: {
-						backgroundPosition: "50% 50%, 50% 50%",
-					},
-					to: {
-						backgroundPosition: "350% 50%, 350% 50%",
-					},
+				rotate: {
+					"0%": { transform: "rotate(0deg)" },
+					"50%": { transform: "scale(1, 1.5)" },
+					"100%": { transform: "rotate(360deg)" },
 				},
 			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+			backdropBlur: {
+				"12vmax": "12vmax",
 			},
 
 		}
