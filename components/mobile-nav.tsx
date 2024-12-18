@@ -30,9 +30,14 @@ export function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
-          {/* Add Tailwind classes for icon color */}
-          <Menu className="h-6 w-6 text-black dark:text-white" />
+        {/* Add bg-black and dark:bg-white for the toggle button */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden bg-black text-white dark:bg-white dark:text-black"
+        >
+          {/* Icon colors */}
+          <Menu className="h-6 w-6 text-white dark:text-black" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
