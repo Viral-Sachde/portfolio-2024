@@ -12,6 +12,15 @@ body {
   }
 }
 
+/* @font-face {
+  font-family: 'casls';
+  src: url('./fonts/calsans-semibold-webfont.woff2') format('woff2'),
+    url('./fonts/calsans-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+} */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -99,7 +108,35 @@ body {
   height: 120%;
   width: 100%;
   position: absolute;
-  backdrop-filter: blur(12vmax);
+  backdrop-filter: blur(14vmax);
   z-index: -1;
   /* Ensure blur stays behind */
+}
+
+@media (max-width: 768px) {
+  #blob {
+    height: 40vmax;
+    /* Larger size for small devices */
+  }
+
+  #blur {
+    height: 150%;
+    width: 100%;
+  }
+}
+
+
+#blob1 {
+  height: 28vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  z-index: -4;
+  /* Ensure blob stays behind */
 }

@@ -21,7 +21,7 @@ const Hero = () => {
             {/* Hero Section */}
             <div className="space-y-4 text-center sm:text-left">
 
-                <h1 className="text-3xl sm:text-4xl font-bold dark:text-white">
+                <h1 className="text-3xl sm:text-[40px] font-bold dark:text-[#F5F5DC]">
                     Hola! I&apos;m Viral Sachde
                 </h1>
                 <p className="text-lg sm:text-2xl dark:text-[#F5F5DC] text-muted-foreground">
@@ -33,13 +33,13 @@ const Hero = () => {
                 </p>
                 <p className="text-muted-foreground">
                     I&apos;m a Software engineer with{' '}
-                    <span className="font-medium text-foreground">1+ YOE</span> building
+                    <span className="font-medium text-foreground">1+ YOE</span> building 10+
                     scalable web apps that are performance optimized and good looking.
                 </p>
             </div>
 
             <div className="space-y-4">
-                <h2 className="text-2xl font-bold dark:text-[#F5F5DC]">Tech Stack</h2>
+                <h2 className="text-2xl font-bold dark:text-[#F5F5DC] ">Tech Stack</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                     {techStack.map((tech) => (
                         <div

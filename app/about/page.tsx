@@ -1,4 +1,5 @@
 
+import BlobProvider1 from "@/components/ui/BlobProvider1"
 import Image from "next/image"
 
 const images = [
@@ -9,8 +10,8 @@ const images = [
 ]
 
 export default function AboutPage() {
-    return (
-        <div className="min-h-screen">
+    return (<>
+        <div className="min-h-screen" >
             <div className="flex">
                 {/* Main Content */}
                 <main className="px-24">
@@ -22,7 +23,7 @@ export default function AboutPage() {
                         </div>
                         <div className="space-y-4">
                             <p className="text-lg dark:text-white text-muted-foreground">
-                                Hola Bhai! I&apos;m Viral Sachde, I’m a Full Stack Web Developer from Ahmedabad, India. With 1+ YOE in creating seamless full stack web applications, trying to make the internet a bit cooler one website at a time
+                                Hola Bhai! I&apos;m Viral Sachde, I&apos;m a Full Stack Web Developer from Ahmedabad, India. With 1+ YOE in creating seamless full stack web applications, trying to make the internet a bit cooler one website at a time
                             </p>
                         </div>
                         {/* Image Grid */}
@@ -65,7 +66,7 @@ export default function AboutPage() {
                         {/* Tech Stack */}
                         <div className="space-y-4 dark:text-white text-muted-foreground">
                             <h2 className="text-2xl font-bold ">Tech Stack & Skills</h2>
-                            <ul>
+                            <ul className="text-muted-foreground">
                                 <li>Programming Languages: JavaScript, TypeScript, Python, HTML, CSS</li>
                                 <li>Frontend Development: React.js, Angular.js, Next.js, Remix, T3 Stack, TailwindCSS</li>
                                 <li>Backend Development: Node.js, Express.js, Nest.js, Django</li>
@@ -119,7 +120,7 @@ export default function AboutPage() {
                     </div>
                 </main>
             </div>
-        </div>
+        </div></>
     )
 }
 

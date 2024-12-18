@@ -5,11 +5,14 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/Header"
 import BlobProvider from "@/components/ui/BlobProvider"
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] , variable: '--font-inter', })
+const cals = localFont({ src: './fonts/CalSans-SemiBold.woff2', variable: '--font-cals', }
+);
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio | Viral Sachde",
   description: "Personal portfolio website",
 }
 
@@ -17,10 +20,11 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) { return (
+}) {
+  return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-   <BlobProvider/>
+      <body className={`${inter.variable} ${cals.variable}`}>
+        <BlobProvider />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

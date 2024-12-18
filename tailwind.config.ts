@@ -12,6 +12,10 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				base: ['var(--font-inter)', 'sans-serif'], // Inter as the base font
+				heading: ['var(--font-cals)', 'sans-serif'], // CalSans for headings
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
