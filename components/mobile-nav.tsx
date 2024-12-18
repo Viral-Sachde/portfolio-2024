@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu } from 'lucide-react'
+import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
@@ -28,16 +28,17 @@ const socials = [
 
 export function MobileNav() {
   return (
-    <Sheet className="color-black dark:color-white">
+    <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu className="h-6 w-6" />
+          {/* Add Tailwind classes for icon color */}
+          <Menu className="h-6 w-6 text-black dark:text-white" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[400px]">
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle> 
+          <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <div className="grid gap-4 py-4">
           <nav className="grid gap-2">
@@ -69,4 +70,3 @@ export function MobileNav() {
     </Sheet>
   )
 }
-
