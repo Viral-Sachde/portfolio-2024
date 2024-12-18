@@ -19,7 +19,7 @@ const Hero = () => {
     return (
         <main className="px-4 sm:px-8 lg:px-16 py-12 space-y-10 min-h-screen mb-0">
             {/* Hero Section */}
-            <div className="space-y-4 text-justify sm:text-left">
+            <div className="space-y-4 text-center sm:text-left">
 
                 <h1 className="text-3xl sm:text-[40px] font-bold dark:text-[#F5F5DC]">
                     Hola! I&apos;m Viral Sachde
