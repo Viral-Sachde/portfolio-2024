@@ -25,17 +25,17 @@ const Hero = () => {
                     Hola! I&apos;m Viral Sachde
                 </h1>
                 <p className="text-lg sm:text-2xl dark:text-[#F5F5DC] text-muted-foreground">
-                    I&apos;m a Full-stack dev that loves{'       '}
-                    <span className="rounded-3xl backdrop-blur-lg bg-white/10 px-2 py-1">
-                        building products
-                    </span>{' '}
-                    and web apps that can impact millions of lives.
-                </p>
-                <p className="text-muted-foreground">
-                    I&apos;m a Software engineer with{' '}
-                    <span className="font-medium text-foreground">1+ YOE</span> building 10+
-                    scalable web apps that are performance optimized and good looking.
-                </p>
+  I&apos;m a Full-stack dev that loves{' '}
+  <span className="rounded-3xl backdrop-blur-lg bg-white/10 px-2 py-1">
+    building products
+  </span>{' '}
+  and web apps that can impact millions of lives.
+</p>
+<p className="text-muted-foreground">
+  Yo, I’m a Software Engineer with{' '}
+  <span className="font-medium text-foreground">1+ YOE</span>, and I’ve dropped 10+ 
+  killer web apps that are not just fast and scalable but also look 🔥.
+</p>
             </div>
 
             <div className="space-y-4">
