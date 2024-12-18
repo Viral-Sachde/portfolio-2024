@@ -90,7 +90,7 @@ body {
 
 
 #blob {
-  height: 28vmax;
+  height: 34vmax;
   aspect-ratio: 1;
   position: absolute;
   left: 50%;
@@ -120,7 +120,7 @@ body {
   }
 
   #blur {
-    height: 150%;
+    height: 160%;
     width: 100%;
   }
 }
