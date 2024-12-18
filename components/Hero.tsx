@@ -25,7 +25,7 @@ const Hero = () => {
                     Hola! I&apos;m Viral Sachde
                 </h1>
                 <p className="text-lg sm:text-2xl dark:text-[#F5F5DC] text-muted-foreground">
-                    I&apos;m a Full-stack dev that loves{' '}
+                    I&apos;m a Full-stack dev that loves{'       '}
                     <span className="rounded-3xl backdrop-blur-lg bg-white/10 px-2 py-1">
                         building products
                     </span>{' '}
