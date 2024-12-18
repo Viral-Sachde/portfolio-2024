@@ -1,5 +1,3 @@
-
-import BlobProvider1 from "@/components/ui/BlobProvider1"
 import Image from "next/image"
 
 const images = [
