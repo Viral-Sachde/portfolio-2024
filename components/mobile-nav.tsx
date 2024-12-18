@@ -28,7 +28,7 @@ const socials = [
 
 export function MobileNav() {
   return (
-    <Sheet>
+    <Sheet className="color-black dark:color-white">
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu className="h-6 w-6" />
