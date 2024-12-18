@@ -91,6 +91,7 @@ body {
 
 #blob {
   height: 34vmax;
+  overflow:hidden;
   aspect-ratio: 1;
   position: absolute;
   left: 50%;
@@ -115,7 +116,7 @@ body {
 
 @media (max-width: 768px) {
   #blob {
-    height: 40vmax;
+    height: 44vmax;
     /* Larger size for small devices */
   }
 
@@ -126,17 +127,3 @@ body {
 }
 
 
-#blob1 {
-  height: 28vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
-  animation: rotate 20s infinite;
-  opacity: 0.8;
-  z-index: -4;
-  /* Ensure blob stays behind */
-}
