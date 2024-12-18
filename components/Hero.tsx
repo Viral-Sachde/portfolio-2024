@@ -25,7 +25,7 @@ const Hero = () => {
   </h1>
   <p className="text-lg sm:text-2xl dark:text-[#F5F5DC] text-muted-foreground">
     I&apos;m a Full-stack dev that loves{' '}
-    <span className="rounded-3xl backdrop-blur-lg bg-white/10 px-2 py-1 inline-block">
+    <span className="rounded-3xl backdrop-blur-lg bg-white/10 px-2 py-0.5 inline-block">
       building products
     </span>{' '}
     and web apps that can impact millions of lives.
