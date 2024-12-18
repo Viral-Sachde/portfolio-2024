@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="min-h-screen overflow-hidden" >
             <div className="flex">
                 {/* Main Content */}
-                <main className="px-24">
+                <main className="px-4 sm:px-24">
 
                     <div className="container  py-10 space-y-8">
                         <div className="space-y-4 ">
