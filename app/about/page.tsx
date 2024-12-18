@@ -9,7 +9,7 @@ const images = [
 
 export default function AboutPage() {
     return (<>
-        <div className="min-h-screen" >
+        <div className="min-h-screen overflow-hidden" >
             <div className="flex">
                 {/* Main Content */}
                 <main className="px-24">
