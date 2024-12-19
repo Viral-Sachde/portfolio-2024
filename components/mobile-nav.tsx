@@ -33,7 +33,7 @@ export function MobileNav() {
 
       {/* Full-page overlay menu */}
       {isOpen && (
-        <div className="fixed flex flex-col top-[92px] left-[-1px] rounded-3xl  w-full backdrop-filter backdrop-blur-3xl noise items-center justify-between p-1 ">
+        <div className="fixed flex flex-col top-[92px] left-[-1px] rounded-3xl  w-full  noise items-center justify-between p-1 ">
           {/* Close button */}
           <button
             onClick={closeMenu}
