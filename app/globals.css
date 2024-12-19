@@ -4,6 +4,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0rem;
+  overflow-x: hidden;
+
 }
 
 @layer utilities {
@@ -88,15 +92,17 @@ body {
   }
 }
 
-
 #blob {
-  height: 34vmax;
-  overflow:hidden;
+  height: 30vmax;
+
+  /* Reduced size for better fit */
+  overflow: hidden;
   aspect-ratio: 1;
   position: absolute;
   left: 50%;
   top: 50%;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
+  /* Proper centering */
   border-radius: 50%;
   background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 20s infinite;
@@ -116,8 +122,8 @@ body {
 
 @media (max-width: 768px) {
   #blob {
-    height: 44vmax;
-    /* Larger size for small devices */
+    height: 36vmax;
+    /* Adjusted for small devices */
   }
 
   #blur {
@@ -125,5 +131,3 @@ body {
     width: 100%;
   }
 }
-
-

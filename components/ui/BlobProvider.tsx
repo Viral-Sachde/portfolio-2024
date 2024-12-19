@@ -28,9 +28,9 @@ const BlobProvider = () => {
     }, []);
 
 
-    return (<div className="overflow-hidden" >
+    return (<div className="overflow-hidden w-full" >
         <div id="blob"></div>
-        <div id="blur"></div></div>
+        <div id="blur" className='w-full'></div></div>
     )
 }
 

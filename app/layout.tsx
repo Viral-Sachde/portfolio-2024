@@ -7,7 +7,7 @@ import Header from "@/components/Header"
 import BlobProvider from "@/components/ui/BlobProvider"
 import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] , variable: '--font-inter', })
+const inter = Inter({ subsets: ["latin"], variable: '--font-inter', })
 const cals = localFont({ src: './fonts/CalSans-SemiBold.woff2', variable: '--font-cals', }
 );
 
@@ -24,16 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${cals.variable}`}>
-        <BlobProvider />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        ><Header />
-          {children}
-        </ThemeProvider>
-      </body>
+        <div className="overflow-hidden">
+          <BlobProvider />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          ><Header />
+            {children}
+          </ThemeProvider>
+        </div>    </body>
     </html>
   )
 }

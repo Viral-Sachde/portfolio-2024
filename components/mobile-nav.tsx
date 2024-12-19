@@ -34,10 +34,10 @@ export function MobileNav() {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden bg-black text-white dark:bg-white dark:text-black"
+          className="md:hidden"
         >
           {/* Icon colors */}
-          <Menu className="h-6 w-6 text-white dark:text-black" />
+          <Menu className="h-6 w-6 text-black dark:text-white" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
