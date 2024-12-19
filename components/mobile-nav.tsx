@@ -33,7 +33,7 @@ export function MobileNav() {
 
       {/* Full-page overlay menu */}
       {isOpen && (
-        <div className="fixed top-[18px] left-[-100px]  h-[80vh] w-[415px] flex flex-col  bg-zinc-800 bg-opacity-10  rounded-3xl backdrop-filter backdrop-blur-3xl z-50 flex items-center justify-between p-1 text-black dark:text-white">
+        <div className="fixed top-[18px] left-[-100px]  h-[80vh] w-[415px] flex flex-col rounded-3xl backdrop-filter backdrop-blur-3xl z-50 flex items-center justify-between p-1 text-black dark:text-white">
           {/* Close button */}
           <button
             onClick={closeMenu}
