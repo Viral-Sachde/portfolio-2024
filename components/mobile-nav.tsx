@@ -33,7 +33,7 @@ export function MobileNav() {
 
       {/* Full-page overlay menu */}
       {isOpen && (
-        <div className="fixed top-[18px] left-[-70px]  h-[90vh] w-screen z-[110] flex flex-col bg-black noise  rounded-3xl backdrop-filter backdrop-blur-3xl  flex items-center justify-between p-1 text-black dark:text-white">
+        <div className="fixed flex flex-col top-[92px] left-[-1px] rounded-3xl  w-full backdrop-filter backdrop-blur-3xl noise items-center justify-between p-1 ">
           {/* Close button */}
           <button
             onClick={closeMenu}
@@ -43,9 +43,9 @@ export function MobileNav() {
             <X className="h-6 w-6 " />
           </button>
 
-          <div className="flex-grow flex flex-col items-justified justify-center ">
+          <div className="flex-grow flex flex-col items-justified justify-center   ">
             {/* Main navigation links */}
-            <nav className="flex flex-col gap-2 text-justify">
+            <nav className="flex flex-col gap-2 text-justify p-8">
               {links.map((link) => (
                 <Link
                   key={link.href}

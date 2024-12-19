@@ -27,7 +27,7 @@ const Header = () => {
                             height={60}
                         />
                     </div>
-                    <div className='md:flex items-center space-x-6 z-30'>
+                    <div className='md:flex items-center space-x-6'>
                         <nav className="hidden md:flex items-center text-[#161c2f] dark:text-[#F5F5DC] space-x-6 ">
                             {links.map((link) => (
                                 <Link
