@@ -33,11 +33,11 @@ export function MobileNav() {
 
       {/* Full-page overlay menu */}
       {isOpen && (
-        <div className="fixed top-[18px] left-[-100px]  h-[80vh] w-[415px] flex flex-col rounded-3xl backdrop-filter backdrop-blur-3xl z-50 flex items-center justify-between p-1 text-black dark:text-white">
+        <div className="fixed top-[18px] left-[-100px]  h-[80vh] w-[400px] flex flex-col rounded-3xl backdrop-filter backdrop-blur-3xl z-50 flex items-center justify-between p-1 text-black dark:text-white">
           {/* Close button */}
           <button
             onClick={closeMenu}
-            className="self-end text-2xl p-2"
+            className="self-end text-2xl p-6"
             aria-label="Close menu"
           >
             <X className="h-6 w-6 " />
