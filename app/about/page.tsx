@@ -7,6 +7,7 @@ const images = [
     "/placeholder.svg",
 ]
 
+
 export default function AboutPage() {
     return (<>
         <div className="min-h-screen overflow-hidden" >
@@ -62,16 +63,16 @@ export default function AboutPage() {
 
 
                         {/* Tech Stack */}
-                        <div className="space-y-4 dark:text-white text-muted-foreground">
+                        <div className="space-y-4 dark:text-white ">
                             <h2 className="text-2xl font-bold ">Tech Stack & Skills</h2>
-                            <ul className="text-muted-foreground">
-                                <li>Programming Languages: JavaScript, TypeScript, Python, HTML, CSS</li>
-                                <li>Frontend Development: React.js, Angular.js, Next.js, Remix, T3 Stack, TailwindCSS</li>
-                                <li>Backend Development: Node.js, Express.js, Nest.js, Django</li>
-                                <li>Databases: MongoDB, MySQL, PostgreSQL</li>
-                                <li>Version Control & Cloud: Git, GitHub, AWS, Docker</li>
-                                <li>Languages: Fluent in English , Hindi, Gujarati (native)</li>
-                                <li>Professional Skills: Team Player, Communication, Problem-Solving, Adaptability, Time Management.</li>
+                            <ul className="text-muted-foreground space-y-1 text-">
+                                <li><span className="text-black dark:text-white ">Programming Languages:</span>JavaScript, TypeScript, Python, HTML, CSS</li>
+                                <li><span className="text-black dark:text-white">Frontend Development: </span>React.js, Angular.js, Next.js, Remix, T3 Stack, TailwindCSS</li>
+                                <li><span className="text-black dark:text-white">Backend Development: </span>Node.js, Express.js, Nest.js, Django</li>
+                                <li><span className="text-black dark:text-white">Databases: </span>MongoDB, MySQL, PostgreSQL</li>
+                                <li><span className="text-black dark:text-white">Version Control & Cloud: </span>Git, GitHub, AWS, Docker</li>
+                                <li><span className="text-black dark:text-white">Languages: </span>Fluent in English , Hindi, Gujarati (native)</li>
+                                <li><span className="text-black dark:text-white">Professional Skills: </span>Team Player, Communication, Problem-Solving, Adaptability, Time Management.</li>
                             </ul>
 
                         </div>
@@ -111,9 +112,21 @@ export default function AboutPage() {
                                 >
                                     Twitter: @twitter/viralpullls
                                 </a>
+                                <a
+                                    href="https://github.com/Viral-Sachde"
+                                    className="text-primary hover:underline"
+                                >
+                                    GitHub: @github/ViralSachde
+                                </a>
+                                <a
+                                    href="mailto:vsachde74@gmail.com"
+                                    className="text-primary hover:underline"
+                                >
+                                    Mail: @mail/ViralSachde
+                                </a>
                             </div>
                             <p className="text-muted-foreground mt-6">
-                                Let&quot;s vibe in the space where code slaps, ideas spark, and pixels tell stories. We&quot;re talking late-night breakthroughs, aesthetic builds, and making tech look effortless. Let&quot;s make some noise. You down?                            </p>
+                                Let&apos;s vibe in the space where code slaps, ideas spark, and pixels tell stories. We&apos;re talking late-night breakthroughs, aesthetic builds, and making tech look effortless. Let&quot;s make some noise. You down?                            </p>
                         </div>
                     </div>
                 </main>

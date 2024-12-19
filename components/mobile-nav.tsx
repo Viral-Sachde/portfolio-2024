@@ -1,15 +1,8 @@
-"use client"
+"use client";
 
-import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
-import Link from "next/link"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
@@ -17,61 +10,58 @@ const links = [
   { href: "/project", label: "Projects" },
   { href: "/articles", label: "Articles" },
   { href: "/contact", label: "Contact" },
-]
+  { href: "/contact", label: "Resume" },
+];
 
-const socials = [
-  { href: "mailto:example@email.com", label: "Gmail" },
-  { href: "https://twitter.com/example", label: "Twitter" },
-  { href: "https://linkedin.com/in/example", label: "LinkedIn" },
-  { href: "https://github.com/example", label: "Github" },
-]
 
 export function MobileNav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        {/* Add bg-black and dark:bg-white for the toggle button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-        >
-          {/* Icon colors */}
-          <Menu className="h-6 w-6 text-black dark:text-white" />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-        <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <nav className="grid gap-2">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium hover:underline"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-          <div className="h-px bg-border" />
-          <nav className="grid gap-2">
-            <p className="text-sm font-medium text-muted-foreground">Socials</p>
-            {socials.map((social) => (
-              <Link
-                key={social.href}
-                href={social.href}
-                className="text-sm hover:underline"
-              >
-                {social.label}
-              </Link>
-            ))}
-          </nav>
+    <div className=" md:hidden ">
+      {/* Toggle button */}
+      <button
+        onClick={toggleMenu}
+        className="p-2 text-black dark:text-white"
+        aria-label="Toggle menu"
+      >
+        <Menu className="h-6 w-6" />
+      </button>
+
+      {/* Full-page overlay menu */}
+      {isOpen && (
+        <div className="fixed top-[18px] left-[-100px]  h-[80vh] w-[415px] z-50 flex flex-col  bg-zinc-800 bg-opacity-10  rounded-3xl backdrop-filter backdrop-blur-3xl z-50 flex items-center justify-between p-1 text-black dark:text-white">
+          {/* Close button */}
+          <button
+            onClick={closeMenu}
+            className="self-end text-2xl p-2"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6 " />
+          </button>
+
+          <div className="flex-grow flex flex-col items-justified justify-center ">
+            {/* Main navigation links */}
+            <nav className="flex flex-col gap-2 text-justify">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-lg font-medium hover:underline"
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+
+           
+          </div>
         </div>
-      </SheetContent>
-    </Sheet>
-  )
+      )}
+    </div>
+  );
 }
