@@ -121,6 +121,13 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    height: 100vh;
+    margin: 0rem;
+    overflow-x: hidden;
+
+  }
+
   #blob {
     height: 36vmax;
     /* Adjusted for small devices */
