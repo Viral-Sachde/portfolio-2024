@@ -10,7 +10,7 @@ const links = [
   { href: "/project", label: "Projects" },
   { href: "/articles", label: "Articles" },
   { href: "/contact", label: "Contact" },
-  { href: "/contact", label: "Resume" },
+  { href: "/https://drive.google.com/file/d/1sp2xqfnzmuITIwvKVatzsVrnPq5TECQJ/view?usp=drive_link", label: "Resume" },
 ];
 
 
