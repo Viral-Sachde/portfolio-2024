@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                                             {project.technologies.map((tech, techIndex) => (
                                                 <span
                                                     key={techIndex}
-                                                    className="rounded-lg bg-primary/10 px-2.5 py-0.5 text-sm font-medium text-primary-foreground transition-colors group-hover:bg-primary/20"
+                                                    className="rounded-lg bg-primary/10 px-2.5 py-0.5 text-sm font-medium text-black transition-colors group-hover:bg-primary/20"
                                                 >
                                                     {tech}
                                                 </span>
