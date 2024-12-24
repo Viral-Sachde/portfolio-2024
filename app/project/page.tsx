@@ -96,7 +96,7 @@ export default function ProjectsPage() {
                                 href={project.link}
                                 className="group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-xl transition-all hover:bg-card/80"
                             >
-                                <div className="">
+                                <div className="p-4">
                                    
                                     <div className="space-y-4">
                                         <div>
