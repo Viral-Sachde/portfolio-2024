@@ -98,15 +98,7 @@ export default function ProjectsPage() {
                                 className="group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-xl transition-all hover:bg-card/80"
                             >
                                 <div className="grid gap-4 p-4 md:grid-cols-[300px_1fr] md:p-6">
-                                    <div className="overflow-hidden rounded-lg">
-                                        <Image
-                                            src={project.image}
-                                            alt={project.title}
-                                            width={300}
-                                            height={200}
-                                            className="aspect-[3/2] h-full w-full object-cover transition-transform group-hover:scale-105"
-                                        />
-                                    </div>
+                                   
                                     <div className="space-y-4">
                                         <div>
                                             <h2 className="text-2xl font-bold">{project.title}</h2>
