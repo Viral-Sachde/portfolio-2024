@@ -4,7 +4,7 @@ const projects = [
     {
         title: "Room",
         description: "Developed a fully functional Zoom clone with features for custom meetings, recordings, and various meeting structures. Leveraged modern web technologies to create a scalable, user-friendly, and interactive video conferencing platform.",
-        image: "/placeholder.svg",
+        
         technologies: [
             "Stream",
             "React",
@@ -18,7 +18,7 @@ const projects = [
     {
         title: "Unified Backend for YouTube and Twitter",
         description: "Built a comprehensive backend system integrating features of YouTube and Twitter into a single application. Enabled functionalities like video uploads, user timelines, likes, retweets, and comments with efficient database handling and scalable architecture.",
-        image: "/placeholder.svg",
+        
         technologies: [
             "Node.js",
             "Express.js",
@@ -32,7 +32,7 @@ const projects = [
     {
         title: "E-commerce Webapp + AI-Integration",
         description: "Designed and developed an Angular-based e-commerce platform with AI integration for personalized product recommendations and a seamless shopping experience. Focused on scalable architecture, payment gateway integration, and intuitive user interface.",
-        image: "/placeholder.svg",
+        
         technologies: [
             "Angular",
             "TypeScript",
@@ -46,7 +46,7 @@ const projects = [
     {
         title: "TurfEase: Turf Booking System",
         description: "Developed a full-stack web application for booking sports turfs, enabling users to browse, book, and manage turf reservations seamlessly. Implemented features like real-time availability, user authentication, payment integration, and a responsive dashboard for turf owners to manage bookings and schedules. Focused on a clean and intuitive user interface with robust backend APIs to ensure smooth operations.",
-        image: "/placeholder.svg",
+        
         technologies: [
             "MongoDB",
             "Express.js",
@@ -60,7 +60,7 @@ const projects = [
     }, {
         title: "Personal Portfolio",
         description: "Created a personal portfolio website using Next.js, HTML, and CSS, showcasing projects, skills, and experiences. Implemented modern UI/UX design principles using Framer Motion for animations and Tailwind CSS for responsive design. Deployed the website on Vercel, ensuring fast load times and a seamless user experience.",
-        image: "/placeholder.svg",
+        
         technologies: [
             "Next.js",
             "HTML",
@@ -96,7 +96,7 @@ export default function ProjectsPage() {
                                 href={project.link}
                                 className="group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-xl transition-all hover:bg-card/80"
                             >
-                                <div className="grid gap-4 p-4 md:grid-cols-[300px_1fr] md:p-6">
+                                <div className="">
                                    
                                     <div className="space-y-4">
                                         <div>
