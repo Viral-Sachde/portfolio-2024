@@ -11,9 +11,9 @@ const projects = [
             "Shadcn",
             "Clerk",
             "Tailwind CSS",
-            "Ext JS"
+            "Next JS"
         ],
-        link: "https://room-meeting-app.vercel.app/"
+        link: "https://github.com/Viral-Sachde/Room-meeting-app"
     },
     {
         title: "Unified Backend for YouTube and Twitter",
@@ -27,21 +27,7 @@ const projects = [
             "Redis",
             "GraphQL"
         ],
-        link: "#"
-    },
-    {
-        title: "E-commerce Webapp + AI-Integration",
-        description: "Designed and developed an Angular-based e-commerce platform with AI integration for personalized product recommendations and a seamless shopping experience. Focused on scalable architecture, payment gateway integration, and intuitive user interface.",
-        
-        technologies: [
-            "Angular",
-            "TypeScript",
-            "Python",
-            "TensorFlow",
-            "Stripe",
-            "Bootstrap"
-        ],
-        link: "#"
+        link: "https://github.com/Viral-Sachde/youtube-twitter-backend"
     },
     {
         title: "TurfEase: Turf Booking System",
@@ -56,7 +42,7 @@ const projects = [
             "Socket.IO",
             "Tailwind CSS"
         ],
-        link: "#"
+        link: "https://github.com/Viral-Sachde/TurfEase"
     }, {
         title: "Personal Portfolio",
         description: "Created a personal portfolio website using Next.js, HTML, and CSS, showcasing projects, skills, and experiences. Implemented modern UI/UX design principles using Framer Motion for animations and Tailwind CSS for responsive design. Deployed the website on Vercel, ensuring fast load times and a seamless user experience.",
@@ -69,12 +55,11 @@ const projects = [
             "Figma",
             "Vercel"
         ],
-        link: "#"
+        link: "https://github.com/Viral-Sachde/portfolio-2024"
     },
 
 ];
 
-// You can add more projects here
 
 
 export default function ProjectsPage() {
