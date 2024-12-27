@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const images = [
-    "/photo1.png",
-    "/photo2.png",
+    "/photo1.jpg",
+    "/photo2.jpg",
      ];
 
 export default function AboutPage() {
