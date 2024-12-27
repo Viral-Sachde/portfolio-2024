@@ -1,11 +1,9 @@
 import Image from "next/image";
 
 const images = [
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-];
+    "/photo1.png",
+    "/photo2.png",
+     ];
 
 export default function AboutPage() {
     return (
