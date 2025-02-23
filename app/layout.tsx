@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import BlobProvider from "@/components/ui/BlobProvider";
 import localFont from "next/font/local";
+import Aurora from "@/components/Backgrounds/Aurora/Aurora";
+import ClickSpark from "@/components/Animations/ClickSpark/ClickSpark";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,16 +30,33 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${cals.variable} overflow-x-hidden`}>
-        <BlobProvider />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+
+        <ClickSpark
+          sparkColor='#fff'
+          sparkSize={18}
+          sparkRadius={40}
+          sparkCount={8}
+          duration={400}
         >
-          <Header />
-          {children}
-        </ThemeProvider>
+          {/* Your content here */}
+          <BlobProvider />
+          <Aurora
+            colorStops={["#00d8ff", "#7cff67", "#9370d8"]}
+            blend={1}
+            amplitude={1.0}
+            speed={0.7}
+          />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {children}
+          </ThemeProvider>
+        </ClickSpark>
+
       </body>
     </html>
   );

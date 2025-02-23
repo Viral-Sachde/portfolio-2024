@@ -3,7 +3,7 @@ import Image from "next/image";
 const images = [
     "/photo1.jpg",
     "/photo2.jpg",
-     ];
+];
 
 export default function AboutPage() {
     return (
@@ -21,7 +21,7 @@ export default function AboutPage() {
                             </div>
                             {/* Introduction */}
                             <div className="space-y-4">
-                                <p className="text-base md:text-lg dark:text-white text-muted-foreground">
+                                <p className="text-base md:text-lg dark:text-white">
                                     Hola Bhai! I&apos;m Viral Sachde, I&apos;m a Full Stack Web Developer from Ahmedabad, India. With 1+ YOE in creating seamless full stack web applications, trying to make the internet a bit cooler one website at a time.
                                 </p>
                             </div>
@@ -47,10 +47,11 @@ export default function AboutPage() {
                                 <div className="space-y-2">
                                     <p className="font-medium dark:text-white">Current:</p>
                                     <p className="text-muted-foreground">
-                                        Angular/Node JS Intern @PMC Retail
+                                        Associate Software Engineer @IDX India
                                     </p>
                                     <p className="font-medium mt-4 dark:text-white">Previous Roles:</p>
                                     <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                                        <li>Angular/Node JS Intern @PMC Retail</li>
                                         <li>MERN Fullstack Dev at @Arkay Apps</li>
                                         <li>MERN Fullstack Dev at @Pavans Group</li>
                                         <li>Django Fullstack Dev at @Anant Soft Computing</li>
