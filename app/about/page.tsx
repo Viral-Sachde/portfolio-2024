@@ -22,7 +22,7 @@ export default function AboutPage() {
                             {/* Introduction */}
                             <div className="space-y-4">
                                 <p className="text-base md:text-lg dark:text-white">
-                                    Hola Bhai! I&apos;m Viral Sachde, I&apos;m a Full Stack Web Developer from Ahmedabad, India. With 1+ YOE in creating seamless full stack web applications, trying to make the internet a bit cooler one website at a time.
+                                    Holaaa! I&apos;m Viral Sachde, I&apos;m a Full Stack Web Developer from Ahmedabad, India. With 1+ YOE in creating seamless full stack web applications, trying to make the internet a bit cooler one website at a time.
                                 </p>
                             </div>
                             {/* Image Grid */}
