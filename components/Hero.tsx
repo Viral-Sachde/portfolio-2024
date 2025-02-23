@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import SpotlightCard from './Components/SpotlightCard/SpotlightCard';
-
 const Hero = () => {
 
     const techStack = [
@@ -22,9 +21,10 @@ const Hero = () => {
         <main className="px-4 sm:px-8 lg:px-16 py-12 space-y-10 min-h-screen mb-0">
             {/* Hero Section */}
 
-  
+
 
             <div className="space-y-4 text-center sm:text-left">
+
                 <h1 className="text-3xl sm:text-[40px] font-bold dark:text-white">
                     Hola! I&apos;m Viral Sachde
                 </h1>
@@ -44,19 +44,22 @@ const Hero = () => {
             <div className="space-y-4">
                 <h2 className="text-2xl font-bold dark:text-white ">Tech Stack</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {techStack.map((tech) => ( <>
+                    {techStack.map((tech) => (<>
+
                         <SpotlightCard className="custom-spotlight-card flex flex-col items-center bg-zinc-800  bg-opacity-10 justify-center rounded-lg  backdrop-blur-lg p-6 shadow-md" spotlightColor="rgba(211, 211, 211, 0.67)">
 
-                        <Image
+
+
+                            <Image
                                 src={tech.icon}
                                 alt={tech.name}
                                 width={40}
                                 height={40}
                                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14" // Adjusted responsive icon sizes
                             />
-                      
-                      </SpotlightCard>
-                        </>
+
+                        </SpotlightCard>
+                    </>
                     ))
                     }
                 </div>

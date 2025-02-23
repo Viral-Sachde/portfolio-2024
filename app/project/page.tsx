@@ -1,3 +1,4 @@
+import SpotlightCard from "@/components/Components/SpotlightCard/SpotlightCard";
 import Link from "next/link"
 
 const projects = [
@@ -75,24 +76,25 @@ export default function ProjectsPage() {
                     </div>
 
                     <div className="grid gap-8">
-                        {projects.map((project, index) => (
+                        {projects.map((project, index) => (                        <><SpotlightCard className="custom-spotlight-card flex flex-col items-center   bg-opacity-10 justify-center rounded-2xl  backdrop-blur-lg p-6 shadow-md" spotlightColor="rgba(211, 211, 211, 0.67)">
                             <Link
-                                key={index}
-                                href={project.link}
-                                className="group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-xl transition-all hover:bg-card/80"
-                            >
+                            key={index}
+                            href={project.link}
+                            className="group relative overflow-hidden "
+                        >
                                 <div className="p-4">
-                                   
+
                                     <div className="space-y-4">
                                         <div>
                                             <h2 className="text-2xl font-bold">{project.title}</h2>
-                                            <p className="text-muted-foreground">{project.description}</p>
+                                            <p className="">{project.description}</p>
                                         </div>
                                         <div className="flex flex-wrap gap-2 ">
                                             {project.technologies.map((tech, techIndex) => (
+
                                                 <span
                                                     key={techIndex}
-                                                    className="rounded-lg bg-primary/10 px-2.5 py-0.5 text-sm font-medium text-black dark:text-white transition-colors group-hover:bg-primary/20"
+                                                    className="rounded-lg bg-primary/10 px-2.5 py-0.5 text-sm font-medium text-black dark:text-white "
                                                 >
                                                     {tech}
                                                 </span>
@@ -101,6 +103,9 @@ export default function ProjectsPage() {
                                     </div>
                                 </div>
                             </Link>
+                        </SpotlightCard>
+                        
+                       </>
                         ))}
                     </div>
                 </div>
