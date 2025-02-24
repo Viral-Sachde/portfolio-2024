@@ -44,7 +44,7 @@ export default function RootLayout({
             colorStops={["#00d8ff", "#7cff67", "#9370d8"]}
             blend={1}
             amplitude={1.2}
-            speed={1.2}
+            speed={0.8}
           />
           <ThemeProvider
             attribute="class"
