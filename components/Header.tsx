@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <div className='mt-[-20px] flex items-center justify-center  noise dark:noise  '>
             <HoverBorderGradient>
-                <header className="sticky  w-full max-w-7xl mx-auto bg-zinc-800 bg-opacity-10  rounded-3xl backdrop-filter backdrop-blur-3xl z-40 flex items-center justify-between p-4 sm:p-6 ">
+                <header className="sticky  w-full max-w-7xl mx-auto bg-zinc-800 bg-opacity-10 border border-neutral-800  rounded-3xl backdrop-filter backdrop-blur-3xl z-40 flex items-center justify-between p-4 sm:p-6 ">
                     <div className="flex items-center space-x-6">
                         <MobileNav />
                         <Image
