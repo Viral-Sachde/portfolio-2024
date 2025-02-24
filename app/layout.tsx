@@ -42,9 +42,9 @@ export default function RootLayout({
           <BlobProvider />
           <Aurora
             colorStops={["#00d8ff", "#7cff67", "#9370d8"]}
-            blend={1}
-            amplitude={1.0}
-            speed={0.7}
+            blend={0}
+            amplitude={1.4}
+            speed={1.2}
           />
           <ThemeProvider
             attribute="class"
