@@ -12,7 +12,7 @@ const Header = () => {
         { href: "/project", label: "Projects" },
         { href: "/articles", label: "Articles" },
         { href: "/contact", label: "Contact" },
-        { href: "https://drive.google.com/file/d/10TN0kXHv_8IVCv-3_WS_Auf2HxsD2qSD/view", label: "Resume" },
+        { href: "https://drive.google.com/file/d/10TN0kXHv_8IVCv-3_WS_Auf2HxsD2qSD/view?usp=drivesdk", label: "Resume" },
     ];
 
     return (
